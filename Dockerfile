@@ -11,7 +11,7 @@
 #       -> Finally we need to run our flask application so we use
 #          ENTRYPOINT and CMD to execute python app.py command    
 
-FROM python:alpine3.7
+FROM python:3.6
 
 COPY requirements.txt /app
 
