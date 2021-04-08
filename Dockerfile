@@ -14,6 +14,9 @@
 FROM python:alpine3.7
 
 COPY requirements.txt /app
+
+RUN MKDIR /app
+
 COPY ./app /app
 WORKDIR /app
 
