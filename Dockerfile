@@ -13,10 +13,9 @@
 
 FROM python:3.6
 
-COPY requirements.txt /app
+COPY requirements.txt .
 
-COPY ./app /app
-WORKDIR /app
+COPY ./app .
 
 RUN python -m pip install -r requirements.txt
 
